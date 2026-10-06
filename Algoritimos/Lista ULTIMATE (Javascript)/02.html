@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<script>
+    alert(` 
+ Exercicio 2:
+
+ Ler as notas da primeira e segunda avaliação de um aluno e calcular a média simples e escrever uma mensagem que diga se 
+ aluno foi ou não aprovado (considerar que se a nota for >= 6 o aluno será aprovado) Escrever a média calculada.  
+ `)
+
+    var nota_1 = parseFloat(prompt("Insira sua primeira nota"));
+    var nota_2 = parseFloat(prompt("Insira sua segunda nota"));
+
+    media = (nota_1 + nota_2) / 2;
+    
+    aprovado = media >= 6;
+
+    if (aprovado) {
+        alert(`Aprovado, segue a sua media ${media.toFixed(2)}. 👍🏻`);
+
+    }
+
+    else {
+        alert(`Reprovado, segua a sua media ${media.toFixed(2)} 🤜🏻😭`);
+    }
+
+
+
+
+
+
+
+
+
+
+</script>

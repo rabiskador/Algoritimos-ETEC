@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<script>
+    alert(` 
+    Exercicio 11:
+    Desenvolva um algoritimo que receba tres notas, a quantidade de aula e a quantidade de faltas 
+    sabendo que para ser aprovado deve ter media maior que 5 e frequecia maior que a 75%.
+    Exiba se o aluno foi aprovado ou reprovado junto a media frequancia.`);
+
+    var quantidade_aulas = parseInt(prompt("Digite a quantidade de aulas que teve"))
+    var quantidade_faltas = parseInt(prompt("Digite quantas aulas voce faltou"))
+    var nota1 = parseFloat(prompt("Digite a primeira nota"));
+    var nota2 = parseFloat(prompt("Digite a segunda nota"));
+    var nota3 = parseFloat(prompt("Digite a terceira nota"));
+
+
+    var frequencia = 100 - (quantidade_faltas / quantidade_aulas * 100);
+    var media = (nota1 + nota2 + nota3) / 3;
+    
+    var aprovado = media > 5 && frequencia > 75;
+
+    if (aprovado) {
+        alert(`Parabens voce foi aprovado sua media foi ${media.toFixed(1)} e sua frequencia foi ${frequencia.toFixed(1)}`);
+    }
+    else {
+        alert(`Infelizmente voce foi reprovado sua media foi ${media.toFixed(1)} e sua frequencia foi ${frequencia.toFixed(1)}`);
+    }
+
+
+
+
+
+
+
+
+</script>

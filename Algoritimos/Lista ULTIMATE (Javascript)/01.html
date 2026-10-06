@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<script>
+    
+        alert(`
+        Exercicio 1:
+
+As maças custam R$1.30/cada  se forem compradas menos de uma duzia, é R$1.00 se forem compradas >= 12.Escreva um algoritimo que leia o número
+        de maças compradas, calcule e escreva o custo total da compra` );
+
+
+
+        var quantidade = parseInt(prompt(`Digite a quantidade de maçãs compradas `));
+
+
+
+    if (quantidade >= 12) {
+        var valor_total = quantidade * 1;
+        alert(` O valor a ser pago é de R$ ${valor_total.toFixed(2)}`);
+    }
+        else {
+        var valor_total = quantidade * 1.30;
+        alert(` O valor a ser pago é de R$ ${valor_total.toFixed(2)}`);
+    }
+
+
+
+
+
+
+</script>

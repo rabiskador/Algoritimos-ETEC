@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+<script>
+    alert(`
+    Exercicio 12:
+    Ler o número de horas inteiras que um veículo permaneceu em um estacionamento
+    e informar se o motorista é cliente cadastrado (1 para sim e 0 para não).
+
+    Cada uma das duas primeiras horas custa R$ 6,00;
+    a partir da terceira, cada hora adicional custa R$ 4,00.
+
+    Se o veículo permaneceu mais de duas horas e o motorista é cadastrado,
+    conceder 10% de desconto.
+    `);
+
+    var horas = parseInt(prompt("Insira o número de horas que o veículo permaneceu no estacionamento"));
+    var cadastro = parseInt(prompt("O motorista é cliente cadastrado? (1 para sim e 0 para não)"));
+
+    var cadastrado = cadastro == 1;
+    var total_pagar;
+
+    if (horas <= 2) {
+        total_pagar = horas * 6;
+    }
+    else {
+        var horas_extra = horas - 2;
+        total_pagar = (2 * 6) + (horas_extra * 4);
+    }
+
+    if (cadastrado) {
+
+        if (horas > 2) {
+            var desconto = total_pagar * 0.10;
+            var total_final = total_pagar - desconto;
+
+            alert(`Valor antes do desconto: R$ ${total_pagar.toFixed(2)}`);
+            alert(`Desconto concedido: R$ ${desconto.toFixed(2)}`);
+            alert(`Total a pagar: R$ ${total_final.toFixed(2)}`);
+        }
+
+        else {
+            alert(`Valor antes do desconto: R$ ${total_pagar.toFixed(2)}`);
+            alert(`Desconto concedido: R$ 0.00`);
+            alert(`Total a pagar: R$ ${total_pagar.toFixed(2)}`);
+        }
+    }
+
+    else {
+        alert(`Valor antes do desconto: R$ ${total_pagar.toFixed(2)}`);
+        alert(`Desconto concedido: R$ 0.00`);
+        alert(`Total a pagar: R$ ${total_pagar.toFixed(2)}`);
+    }
+
+</script>

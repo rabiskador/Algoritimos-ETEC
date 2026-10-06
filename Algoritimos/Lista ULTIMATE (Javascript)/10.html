@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    alert(`
+    Exercicio 10:
+    Desenvolva um algoritimo que receba a idade em anos e a altura em metros de um usuario. 
+    O usuario somente pode participar da montanha russa se tiver pelo menos 12 anos e 1.30 de altura metros. 
+    exibir para o usuario se ele pode ou não andar na montanha russa.`);
+
+    var idade = parseInt(prompt("Insira sua idade"));
+    var altura = parseFloat(prompt("Insira sua altura em metro"))
+
+    var liberado = idade >= 12 && altura >= 1.30;
+
+    if (liberado) {
+        alert(`Voce esta liberado para andar na montanha russa`);
+    }
+    else {
+        alert(`Voce nao pode andar na montanha russa`);
+    }
+</script>

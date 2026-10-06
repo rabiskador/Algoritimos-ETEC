@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<script>
+    alert(`
+    Exercicio 13:
+    Ler a idade de uma pessoa, informar se ela é estudante (1 para sim e 0 para não) e ler o valor integral de um ingresso. 
+    Pessoas com até 12 anos ou com 60 anos ou mais não pagam ingresso. 
+    Estudantes com idade entre 13 e 59 anos pagam metade do valor. 
+    As demais pessoas pagam o valor integral. Calcular e escrever o valor a pagar e o tipo de ingresso concedido.
+    Valor do ingresso: R$ 50.00
+    `);
+    
+    var idade = parseInt(prompt("Insira sua idade"))
+    var estudante = parseInt(prompt("Voce é estudante? (1 para sim e 0 para não)"))
+    var ingresso = 50
+
+    var isento = idade <= 12 || idade >= 60;
+    var metade = estudante == 1 && idade >= 13 && idade <= 59;
+
+    if (isento) {
+        alert(`Devido sua idade de ${idade} anos voce nao paga ingresso. Bom filme!`);
+    }
+    else if (metade) {
+        var desconto = ingresso / 2;
+        alert(`Voce adquiriu o ingresso estudante tem o desconto de 50% do valor de R$ ${ingresso.toFixed(2)} sai por R$ ${desconto.toFixed(2)}. Bom filme!`);
+    }
+    else {
+         alert(`Voce adquiriu o ingresso normal por R$ ${ingresso.toFixed(2)}. Bom filme!`);
+    }
+
+
+
+
+</script>

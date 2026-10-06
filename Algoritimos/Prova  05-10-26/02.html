@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+    alert(`
+    Exercicio 2:
+    Leia três valores inteiros que representam os lados de um triângulo. O algoritmo deve verificar e informar se o triângulo é:
+    - Equilátero → os três lados são iguais.
+    - Isósceles → dois lados são iguais.
+    - Escaleno → os três lados são diferentes.`
+    )
+
+    
+    var valor_esquerdo_triangulo = parseInt(prompt("Coloque o valor do lado esquerdo do triangulo"));
+    var valor_direito_triangulo = parseInt(prompt("Coloque o valor do lado direito do triangulo"));
+    var valor_base_triangulo = parseInt(prompt("Coloque o valor da parte de baixo do triangulo"));
+
+
+    if (valor_base_triangulo ==  valor_direito_triangulo == valor_esquerdo_triangulo) {
+        alert(`Seu triangulo é Equilátero. Os três lados são iguais`);
+    }
+    else if(valor_base_triangulo != valor_direito_triangulo && valor_esquerdo_triangulo != valor_base_triangulo && valor_direito_triangulo != valor_esquerdo_triangulo) {
+        alert(`Seu triangulo é Escaleno. Os três lados são diferentes`);
+   
+    }
+    else {
+        alert(`Seu triangulo é Isósceles. Dois lados são iguais`);
+    }
+
+
+</script>

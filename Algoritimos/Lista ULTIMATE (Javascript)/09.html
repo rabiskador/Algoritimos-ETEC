@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+<script>
+    alert(`
+    Exercício 9:
+    Desenvolva um programa que receba 4 valores,
+    exiba a soma dos dois maiores valores!
+    `);
+
+    var valor1 = parseFloat(prompt("Digite o primeiro valor"));
+    var valor2 = parseFloat(prompt("Digite o segundo valor"));
+    var valor3 = parseFloat(prompt("Digite o terceiro valor"));
+    var valor4 = parseFloat(prompt("Digite o quarto valor"));
+
+
+    var maior = valor1;
+    var segundo = valor2;
+
+    if (valor2 > maior) {
+        maior = valor2;
+        segundo = valor1;
+    }
+
+    if (valor3 > maior) {
+        segundo = maior;
+        maior = valor3;
+    }
+    else if (valor3 > segundo) {
+        segundo = valor3;
+    }
+
+    if (valor4 > maior) {
+        segundo = maior;
+        maior = valor4;
+    }
+    else if (valor4 > segundo) {
+        segundo = valor4;
+    }
+
+    alert(`A soma dos dois maiores valores é ${maior + segundo}`);
+</script>

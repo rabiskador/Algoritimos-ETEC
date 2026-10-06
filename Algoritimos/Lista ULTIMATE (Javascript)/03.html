@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<script>
+    alert(` 
+  Exericio 3:
+  Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela poderá ou não votar esté ano? 
+  (não é necessário considerar o mes em que a pessoa nasceu,considerar somente que a pessoa deve ter 16 anos para votar )`)
+
+    var ano_nasc = parseInt(prompt("Insira o ano que voce nasceu"));
+    var ano_atual = parseInt(prompt("Insira o ano atual"));
+
+    var idade = ano_atual - ano_nasc;
+    var pode_votar = idade >= 16;
+
+    if (pode_votar) {
+        alert(` Voce tem ${idade} anos, você ja tem direito a votar, exerça sua cidadania com sabedoria 👍 `);
+    }
+    else {
+
+        alert(` Voce tem ${idade} anos, Infelizmente voce não possui idade para votar `);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

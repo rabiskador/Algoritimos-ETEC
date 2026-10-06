@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<script>
+    alert(`
+    Exercicio 1:
+    Leia a base e a altura de dois retângulos. Calcule e exiba a área de cada retângulo (base*altura) e informe:
+    - "Retângulo 1 possui maior área"
+    - "Retângulo 2 possui maior área"
+    - "Os dois possuem a mesma área"`
+    )
+
+
+    var retangulo_1_altura = parseFloat(prompt("Coloque a altura do seu retangulo 1  "));
+    var retangulo_1_base = parseFloat(prompt("Coloque a base do seu retangulo 1 "));
+
+    var retangulo_2_altura = parseFloat(prompt("Coloque a altura do seu retangulo 2 "));
+    var retangulo_2_base = parseFloat(prompt("Coloque a base do seu retangulo 2 "));
+
+
+    var retangulo1_area = retangulo_1_base * retangulo_1_altura;
+    var retangulo2_area = retangulo_2_base * retangulo_2_altura;
+
+
+    if (retangulo1_area > retangulo2_area) {
+        
+        alert(`Retângulo 1 possui maior área`);
+    }
+    else if (retangulo2_area > retangulo1_area) {
+        alert(`Retângulo 2 possui maior área`);
+    }
+    else {
+        alert(`os dois possuem a mesma área`);
+    }
+
+</script>

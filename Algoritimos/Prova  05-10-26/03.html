@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+<script>
+    alert(`
+    Exercicio 3:
+    Leia:
+    - valor → valor de uma compra
+    - entrada → valor pago como entrada
+    Calcule o percentual da entrada em relação ao valor total:
+    percentual = (entrada / valor) * 100
+    Classifique a compra:
+    - Entrada menor que 20% → "Entrada baixa"
+    - Entrada entre 20% e 50% → "Entrada média"
+    - Entrada maior ou igual que 50% → "Entrada alta"
+    Além disso, calcule o valor que ficará para financiar:`
+    )
+
+    
+    var valor_compra = parseFloat(prompt("Coloque o valor da sua compra"));
+    var valor_entrada = parseFloat(prompt("Coloque o valor de entrada da sua compra"));
+
+
+    var percentual = (valor_entrada / valor_compra) * 100;
+    var financiamento = valor_compra - valor_entrada;
+     
+
+     if (percentual < 20) {
+       
+        alert(`Entrada baixa, voce deu R$ ${valor_entrada.toFixed(2)} que vale cerca de ${percentual.toFixed(1)}% e ficou faltando R$ ${financiamento.toFixed(2)} para financiar`);
+     }
+
+
+    else if (percentual >= 50) {
+        alert(`Entrada alta, voce deu R$ ${valor_entrada.toFixed(2)} que vale cerca de ${percentual.toFixed(1)}% e ficou faltando R$ ${financiamento.toFixed(2)} para financiar`);
+    }
+    else {
+        alert(`Entrada média, voce deu R$ ${valor_entrada.toFixed(2)} que vale cerca de ${percentual.toFixed(1)}%  e ficou faltando R$ ${financiamento.toFixed(2)} para financiar `);
+    }
+
+</script>

@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+<script>
+    alert(`
+    Exercicio 7:
+    Ler o salário e o valor das vendas efetuadas pelo vendedor de uma empresa. 
+    Sabendo-se que ele recebe uma comisão de 3% sobre sobre o total de vendas até R$ 1.500,00 mais 5% sobre 
+    o que ultrapassar esse valor, calcular e motrar o seu salario total`);
+
+    var salario = parseFloat(prompt("Insira seu salario"));
+    var valor_vendas = parseFloat(prompt("Insira o valor das suas vendas"));
+
+
+    if (valor_vendas <= 1500) {
+        var comissao = (valor_vendas * 3) / 100 + salario;
+        alert(`Voce ira receber a porcentagem de 3% do valor vendido: R$${comissao.toFixed(2)}`);
+    }
+
+    else {
+        var comissao = (valor_vendas * 5) / 100 + salario;
+        alert(`Parabéns voce ira receber a porcentagem maxima de de 5% do valor vendido: R$${comissao.toFixed(2)}`);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
