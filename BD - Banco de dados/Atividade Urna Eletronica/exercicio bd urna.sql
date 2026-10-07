@@ -31,3 +31,15 @@ CREATE TABLE eleitor (
  FOREIGN KEY (id_eleitor) REFERENCES eleitor(id_eleitor),
 FOREIGN KEY (id_candidato) REFERENCES candidato(id_candidato)
 );
+
+INSERT INTO partido (nome, sigla) VALUES
+('Partido MENINONEY', 'NEY'),
+('Partido PAPAICRIS', 'CR7'),
+('Partido ET', 'GOAT');
+
+INSERT INTO candidato (nome, numero, id_partido) VALUES
+('NEYMAR JUNIOR', 11, 7),
+('CRISTIANO RONALDO', 7, 8),
+('LIONEL MESSI', 10, 9);
+
+SELECT * FROM partido
