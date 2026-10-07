@@ -43,3 +43,9 @@ INSERT INTO candidato (nome, numero, id_partido) VALUES
 ('LIONEL MESSI', 10, 9);
 
 SELECT * FROM partido
+
+INSERT INTO eleitor (nome, titulo, cidade) VALUES
+('GABIGOL', '111', 'Santos'),
+('LUCIANO', '222', 'São Paulo'),
+('Pedro', '333', 'Flamengo'),
+('DEPAY', '444', 'Corinthians');
