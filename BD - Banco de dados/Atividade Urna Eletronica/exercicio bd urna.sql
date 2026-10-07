@@ -22,4 +22,12 @@ CREATE TABLE eleitor (
  cidade VARCHAR(50)
  );
 
-    
+ CREATE TABLE voto (
+ id_voto INT PRIMARY KEY AUTO_INCREMENT,
+ id_eleitor INT NOT NULL UNIQUE,
+ id_candidato  INT NOT NULL,
+ data_hora DATETIME DEFAULT CURRENT_TIMESTAMP,
+ 
+ FOREIGN KEY (id_eleitor) REFERENCES eleitor(id_eleitor),
+FOREIGN KEY (id_candidato) REFERENCES candidato(id_candidato)
+);
